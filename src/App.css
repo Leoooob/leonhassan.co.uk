@@ -1,0 +1,95 @@
+h1, h2 {
+  margin: 0.2em 0;
+}
+
+h1, h2,
+a {
+  color: #f05f40;
+}
+
+a:hover {
+  color: #fc4c27;
+  text-shadow: #f05f40 0px 0px 35px;
+}
+
+header {
+  text-align: center;
+}
+
+header .glyphs {
+  display: grid;
+  margin: 2em 0;
+  grid-template-columns: repeat(3, auto);
+}
+
+.mainContent {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: max-content auto;
+}
+
+main {
+  display: inline-block;
+}
+
+main section h3 {
+  margin: 0;
+}
+
+aside {
+  max-width: 13em;
+  text-align: center;
+  display: inline-block;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+aside .location {
+  margin: 1em 0;
+}
+
+aside ul.skillsList {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  column-gap: 1em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em; 
+  column-width: auto;
+  -moz-column-width: auto;
+  -webkit-column-width: auto;
+   
+ }
+ 
+aside ul.skillsList li {
+  margin: 0.1em;
+  padding: 0.2em;
+  border: 1px solid black;
+  display: inline-block;
+ }
+
+ aside ul.skillsList li:hover {
+  cursor: pointer;
+  color: #f05f40;
+ }
+
+/* icons */
+.iconPrimary {
+  fill: #f05f40;
+}
+
+.iconSecondary {
+  fill: #fc4c27;
+  fill: #333;
+}
+
+.icon {
+  width: 24px;
+  height: auto;
+}
+
+.icon.btn {
+  padding: 8px;
+}
