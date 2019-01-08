@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b2a5bdf8ccc3752b3de3",
-    "url": "/leonhassan.co.uk/static/css/main.6daf75a8.chunk.css"
+    "revision": "e8ffb713541f1bc33134",
+    "url": "/leonhassan.co.uk/static/css/main.d4f3a617.chunk.css"
   },
   {
-    "revision": "b2a5bdf8ccc3752b3de3",
-    "url": "/leonhassan.co.uk/static/js/main.b2a5bdf8.chunk.js"
+    "revision": "e8ffb713541f1bc33134",
+    "url": "/leonhassan.co.uk/static/js/main.e8ffb713.chunk.js"
   },
   {
     "revision": "f739feb7d61c48a46bed",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/leonhassan.co.uk/static/js/runtime~main.0e3ffe33.js"
   },
   {
-    "revision": "447fbb9eb3b35a3abbf773a9ee97c954",
+    "revision": "ed80e3e17a5eede8e14be356735a9028",
     "url": "/leonhassan.co.uk/index.html"
   }
 ];
