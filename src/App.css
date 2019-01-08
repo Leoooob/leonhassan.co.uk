@@ -32,8 +32,16 @@ main {
   display: inline-block;
 }
 
+main section {
+  margin: 1em;
+}
+
 main section h3 {
   margin: 0;
+}
+
+.readMore {
+  text-align: right;
 }
 
 aside {
@@ -88,6 +96,7 @@ aside ul.skillsList li {
 .icon {
   width: 24px;
   height: auto;
+  vertical-align: sub;
 }
 
 .icon.btn {
