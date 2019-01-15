@@ -58,7 +58,13 @@ aside .location {
   margin: 1em 0;
 }
 
-aside ul.skillsList {
+aside .skill-wall {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-gap: 2em;
+}
+
+aside .skill-wall ul.skills-list {
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -71,17 +77,27 @@ aside ul.skillsList {
    
  }
  
-aside ul.skillsList li {
+aside .skill-wall ul.skills-list li {
   margin: 0.1em;
   padding: 0.2em;
   border: 1px solid black;
   display: inline-block;
  }
 
- aside ul.skillsList li:hover {
+ aside .skill-wall ul.skills-list li:hover {
   cursor: pointer;
   color: #f05f40;
  }
+
+ aside .skill-wall .skill-description {
+  border: 1px solid;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+aside .skill-wall .skill-description h3 {
+  color: #f05f40;
+}
 
 /* icons */
 .iconPrimary {
