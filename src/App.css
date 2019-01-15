@@ -60,8 +60,9 @@ aside .location {
 
 aside .skill-wall {
   display: grid;
-  grid-template-rows: max-content;
   grid-gap: 2em;
+  grid-template-columns: 13em;
+  grid-template-rows: max-content;
 }
 
 aside .skill-wall ul.skills-list {
