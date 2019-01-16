@@ -97,6 +97,7 @@ aside .skill-wall ul.skills-list li {
 }
 
 aside .skill-wall .skill-description h3 {
+  margin: 0 auto;
   color: #f05f40;
 }
 

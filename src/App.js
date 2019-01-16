@@ -61,19 +61,61 @@ class Body extends React.Component {
   }
 }
 
-const aSkills = [
-  "JavaScript",
-  "CSS",
-  "HTML",
-  "Node.js",
-  "SAPUI5",
-  "SAP",
-  "Fiori",
-  "React",
-  "Vue.js",
-  "PWA",
-  "Design Thinking",
-  "Agile"
+const aSkillObjs = [{
+    exp: 5,
+    name: "JavaScript",
+    desc: "Leon writes JavaScript day-to-day and "
+  },
+  {
+    exp: 0,
+    name: "CSS",
+    desc: "Styling the modern web"
+  },
+  {
+    exp: 0,
+    name: "HTML",
+    desc: "Writing the modern web"
+  },
+  {
+    exp: 0,
+    name: "Node.js",
+    desc: ""
+  },
+  {
+    exp: 0,
+    name: "React",
+    desc: ""
+  },
+  {
+    exp: 0,
+    name: "SAPUI5",
+    desc: ""
+  },
+  {
+    exp: 0,
+    name: "Web APIs",
+    desc: ""
+  },
+  {
+    exp: 0,
+    name: "SAP",
+    desc: ""
+  },
+  {
+    exp: 0,
+    name: "Fiori",
+    desc: ""
+  },
+  {
+    exp: 0,
+    name: "Design Thinking",
+    desc: ""
+  },
+  {
+    exp: 0,
+    name: "Agile",
+    desc: ""
+  },
 ];
 
 class Aside extends React.Component {
@@ -85,7 +127,7 @@ class Aside extends React.Component {
           <span>Southampton, UK</span>
         </div>
         <h2>Skills Wall</h2>
-        <SkillWall aSkills={aSkills} />
+        <SkillWall aSkills={aSkillObjs} />
       </aside>
     );
   }
@@ -102,15 +144,21 @@ class SkillWall extends React.Component {
   }
 }
 
-function updateText(skill, desc) {
-  this.setState({skill, desc});
+function updateText(skill, desc, exp) {
+  this.setState({skill, desc, exp});
 }
 
 class SkillBricks extends SkillWall {
   render() {
-    // TODO: map both skill name and description to the list item
-    var skillComponents = this.props.aSkillList.map(function(sSkill, iKey) {
-      return <li data-desc="testing" key={iKey} onClick={(e) => updateText(e.target.textContent, e.target.dataset.desc)}>{sSkill}</li>;
+    var skillComponents = this.props.aSkillList.map(function(oSkill, iKey) {
+      function onClickUpdateText(oEvent) {
+        let sSkill = oEvent.target.textContent;
+        let sDesc = oEvent.target.dataset.desc;
+        let iExp = oEvent.target.dataset.exp;
+        
+        updateText(sSkill, sDesc, iExp);
+      }
+      return <li data-desc={oSkill.desc} data-exp={oSkill.exp} key={iKey} onClick={(e) => onClickUpdateText(e)}>{oSkill.name}</li>;
     });
     
     return <ul className="skills-list">{skillComponents}</ul>;
@@ -121,8 +169,9 @@ class SkillDescription extends SkillWall {
   constructor(props) {
     super(props);
     this.state = {
-      skill: "",
-      desc: "Click on a skill for it's description"
+      skill: "Skill Description",
+      exp: 0,
+      desc: "Click on a skill for some more information"
     };
     
     updateText = updateText.bind(this);
@@ -130,12 +179,36 @@ class SkillDescription extends SkillWall {
   render() {
     let sSkill = this.state.skill;
     var sSkillDesc = this.state.desc;
+    var iSkillExp = this.state.exp;
 
-    //return <div className="skill-description">{sSkill}{sSkillDesc}</div>;
+    /*var eDiv = document.createElement("div");
+    eDiv.setAttribute("class", "skill-description");
+    
+    var eHeading = document.createElement("h3");
+    var sHeading = document.createTextNode(sSkill);
+    eHeading.appendChild(sHeading);
+    eDiv.appendChild(eHeading);
+    
+    var eParagraph = document.createElement("p");
+    var sParagraph = document.createTextNode(sSkillDesc);
+    eParagraph.appendChild(sParagraph);
+    eDiv.appendChild(eParagraph);
+    
+    if (iSkillExp > 0) {
+      var eSpan = document.createElement("span");
+      var sSpan = document.createTextNode(iSkillExp + " years exp");
+      eSpan.appendChild(sSpan);
+      eDiv.appendChild(eSpan);
+    }
+
+    return eDiv;*/
+
+    // TODO: use js to create element, if exp > 0 append child to div
     return (
       <div className="skill-description">
         <h3>{sSkill}</h3>
         <p>{sSkillDesc}</p>
+        <span>{iSkillExp} years exp</span>
       </div>
     );
   }
