@@ -176,39 +176,24 @@ class SkillDescription extends SkillWall {
     
     updateText = updateText.bind(this);
   }
+
+  renderExperienceSpan(iSkillExp) {
+    if (iSkillExp > 0) {
+      return <span>{iSkillExp} years exp</span>;
+    }
+  }
+
   render() {
     let sSkill = this.state.skill;
     var sSkillDesc = this.state.desc;
     var iSkillExp = this.state.exp;
-
-    /*var eDiv = document.createElement("div");
-    eDiv.setAttribute("class", "skill-description");
-    
-    var eHeading = document.createElement("h3");
-    var sHeading = document.createTextNode(sSkill);
-    eHeading.appendChild(sHeading);
-    eDiv.appendChild(eHeading);
-    
-    var eParagraph = document.createElement("p");
-    var sParagraph = document.createTextNode(sSkillDesc);
-    eParagraph.appendChild(sParagraph);
-    eDiv.appendChild(eParagraph);
-    
-    if (iSkillExp > 0) {
-      var eSpan = document.createElement("span");
-      var sSpan = document.createTextNode(iSkillExp + " years exp");
-      eSpan.appendChild(sSpan);
-      eDiv.appendChild(eSpan);
-    }
-
-    return eDiv;*/
 
     // TODO: use js to create element, if exp > 0 append child to div
     return (
       <div className="skill-description">
         <h3>{sSkill}</h3>
         <p>{sSkillDesc}</p>
-        <span>{iSkillExp} years exp</span>
+        {this.renderExperienceSpan(iSkillExp)}
       </div>
     );
   }
@@ -222,7 +207,7 @@ class Content extends React.Component {
         <section>
           <h3>Capgemini</h3>
           <span>June 2017 - Present</span>
-          <p>I have worked for over a year at a secure project and I am currently the UI Development lead at this project. My responsibilities include running workshops with the client, designing & architecting Fiori solutions, developing UI5 applications, organise code reviews and run our team's daily development stand-up.</p>
+          <p>I have worked for over a year at a secure project and I am currently the UI Development lead at this project. My responsibilities include running workshops with the client, designing & architecting Fiori solutions, developing UI5 applications, organise code reviews and run our daily development stand-up.</p>
           <p>While at Capgemini I have also helped to develop a cloud automation tool for SAP systems, created standard training for those joining the SAP practice and organised a CodeJam.</p>
           <ReadMoreLink company="Capgemini" tag="capgemini" />
         </section><hr/>
@@ -236,7 +221,7 @@ class Content extends React.Component {
         <section>
           <h3>IBM</h3>
           <span>June 2015 - June 2016 (Industral Year)</span>
-          <p>At IBM I worked as a database administrator for the DEFRA account day-to-day, in my spare time I persued my interests in the form of internal projects and hackathons. In my year at IBM I attended and won 3 hackathons, one of which I presented to the event's sponsor, Robert LeBlanc - IBM USA's Senior VP of Cloud.</p>
+          <p>At IBM I worked as a database administrator for the DEFRA account day-to-day, in my spare time I persued my interests in the form of internal projects and hackathons. In my year at IBM I attended and won 3 hackathons, one of which I presented to the event sponsor, Robert LeBlanc - IBM Senior VP of Cloud.</p>
           <ReadMoreLink company="IBM" tag="ibm" />
         </section><hr/>
 
