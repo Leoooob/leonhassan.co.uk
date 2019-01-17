@@ -220,7 +220,7 @@ class Content extends React.Component {
         <section>
           <h3>Capgemini</h3>
           <span>June 2017 - Present</span>
-          <p>Leon has worked for over a year at a secure project and is currently the UI Development lead at this project. His responsibilities include running workshops with the client, designing &amp; architecting Fiori solutions, developing UI5 applications, organising code reviews and running the daily development stand-up.</p>
+          <p>Leon has worked for over a year at a secure project and is currently the UI Development Lead at this project. His responsibilities include running workshops with the client, designing &amp; architecting Fiori solutions, developing UI5 applications, organising code reviews and running the daily development stand-up.</p>
           <p>While at Capgemini Leon has also helped to develop a cloud automation tool for SAP systems, created standard training for those joining the SAP practice and organised a CodeJam.</p>
           <ReadMoreLink company="Capgemini" tag="capgemini" />
         </section><hr/>
@@ -228,20 +228,20 @@ class Content extends React.Component {
         <section>
           <h3>Atebol Interactive</h3>
           <span>June 2016 - December 2016</span>
-          <p>Atebol is a publishing company based in Aberystwyth, I worked here during my final year of university (and preceeding summer). During this time I was able to build web applications using the Angular.js framework and work closesly with a number of content-management systems such as Joomla and OpenCart.</p>
+          <p>Atebol is a publishing company based in Aberystwyth, Leon worked here during the summer until January exams. During this time Leon was able to build web applications using Angular.js &amp; jQuery, he also worked closesly with a number of content-management systems such as Joomla and OpenCart.</p>
         </section><hr/>
 
         <section>
           <h3>IBM</h3>
           <span>June 2015 - June 2016 (Industral Year)</span>
-          <p>At IBM I worked as a database administrator for the DEFRA account day-to-day, in my spare time I persued my interests in the form of internal projects and hackathons. In my year at IBM I attended and won 3 hackathons, one of which I presented to the event sponsor, Robert LeBlanc - IBM Senior VP of Cloud.</p>
+          <p>At IBM Leon worked as a database administrator for the DEFRA account, in his spare time he persued more challenging internal projects and took part in hackathons over a few weekends. During Leon's year at IBM he attended and won a number hackathons, some of which he went on to present to Robert LeBlanc (Senior VP of Cloud) and Damon Deaner (Director of Employee Experience &amp; HR Design).</p>
           <ReadMoreLink company="IBM" tag="ibm" />
         </section><hr/>
 
         <section>
           <h3>Bottomline Technology</h3>
           <span>June 2014 - September 2014</span>
-          <p>I worked at Bottomline as a QA Engineer and focused on introducing automated testing, specifically regression testing on new releases and features that could be plugged into the Jenkins Continuous Integration pipeline. I used RobotFramework with Python bindings to write my scripts, for the particular product I was working on I also used the Gmail API to automate some user actions prompted by emails.</p>
+          <p>Leon worked as a QA Engineer over the Summer to gain a deeper understanding of delivering software and agile methodologies. In this role he introduced automated testing to his particular project, specifically regression testing that could be plugged into their Jenkins CI pipeline. Leon used RobotFramework (Selenium-based) with Python bindings to write plain-text scripts, for the particular product he was working on he also made use of the Gmail API to automate user-actions prompted by emails.</p>
         </section>
       </main>
     );
