@@ -64,57 +64,57 @@ class Body extends React.Component {
 const aSkillObjs = [{
     exp: 5,
     name: "JavaScript",
-    desc: "Leon writes JavaScript day-to-day and "
+    desc: "Leon writes JavaScript day-to-day and looks to make use of new ECMAScript features where he can."
   },
   {
-    exp: 0,
+    exp: 5,
     name: "CSS",
-    desc: "Styling the modern web"
+    desc: "Leon is an advocate of using CSS to it's maximum rather than writing some dodgy JS to create the same effect as a few lines of smart styling."
   },
   {
-    exp: 0,
+    exp: 5,
     name: "HTML",
-    desc: "Writing the modern web"
+    desc: "Leon has been following HTML standards since learning about the power of semantic mark-up and how difficult browsing the web can be for those that rely on accessibility features of the web."
   },
   {
-    exp: 0,
+    exp: 3,
     name: "Node.js",
-    desc: ""
+    desc: "Leon has used Node extensively from creating a middleman REST server for SAP System Cloud Automation to his local development environment."
   },
   {
-    exp: 0,
+    exp: 1,
     name: "React",
-    desc: ""
+    desc: "Leon is new to React but not the underlying idea of abstracting code to the component-level and is well underway with presenting React as a modern alternative to SAPUI5."
   },
   {
-    exp: 0,
+    exp: 2,
     name: "SAPUI5",
-    desc: ""
+    desc: "Leon uses SAPUI5 as his bread and butter work and is deeply familiar with the framework."
   },
   {
     exp: 0,
     name: "Web APIs",
-    desc: ""
+    desc: "Leon follows the new Web Standards and APIs and is trying to engage with them at the explainer level to better understand how the web works."
   },
   {
-    exp: 0,
+    exp: 2,
     name: "SAP",
-    desc: ""
+    desc: "Leon has gained invaluable experience in both Gateway and S4Hana systems through high-profile engagements."
   },
   {
-    exp: 0,
+    exp: 2,
     name: "Fiori",
-    desc: ""
+    desc: "Leon quickly got to grips with Fiori 2.0 design principals and is currently focusing on increasing the UISmart team capability of frameworks outside of SAPUI5 with the advent of Fiori 3.0"
   },
   {
-    exp: 0,
+    exp: 0,//3,
     name: "Design Thinking",
-    desc: ""
+    desc: "Leon is an advocate of the Design Thinking toolset and believes collaboration between developers, designers, business leads and the end user is essential to build something great."
   },
   {
-    exp: 0,
+    exp: 0,//4,
     name: "Agile",
-    desc: ""
+    desc: "Leon has worked in Agile teams throughout his career and has been an evangalist for Agile Methodologies since joining Capgemini, showcasing the difference between an Agile delivery vs Wagile or Waterfall."
   },
 ];
 

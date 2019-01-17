@@ -24,7 +24,7 @@ header .glyphs {
 
 .mainContent {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 2em;
   grid-template-columns: max-content auto;
 }
 
@@ -45,7 +45,6 @@ main section h3 {
 }
 
 aside {
-  max-width: 13em;
   text-align: center;
   display: inline-block;
 }
@@ -61,7 +60,7 @@ aside .location {
 aside .skill-wall {
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: 13em;
+  grid-template-columns: 16em;
   grid-template-rows: max-content;
 }
 
