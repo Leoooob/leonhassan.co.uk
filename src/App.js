@@ -145,7 +145,7 @@ class SkillWall extends React.Component {
 }
 
 function updateText(skill, desc, exp) {
-  this.setState({skill, desc, exp});
+  this._setState({skill, desc, exp});
 }
 
 class SkillBricks extends SkillWall {
@@ -168,16 +168,30 @@ class SkillBricks extends SkillWall {
 class SkillDescription extends SkillWall {
   constructor(props) {
     super(props);
-    this.state = {
+    this._initState = {
       skill: "Skill Description",
       exp: 0,
       desc: "Click on a skill for some more information"
     };
-    
+
+    this.state = this._initState;
+
     updateText = updateText.bind(this);
   }
 
-  renderExperienceSpan(iSkillExp) {
+  _resetState(){
+    this.setState(this._initState);
+  }
+
+  _setState(oState) {
+    if (oState.skill === this.state.skill) {
+      this.setState(this._initState);
+    } else {
+      this.setState(oState);
+    }
+  }
+
+  _renderExperienceSpan(iSkillExp) {
     if (iSkillExp > 0) {
       return <span>{iSkillExp} years exp</span>;
     }
@@ -188,12 +202,11 @@ class SkillDescription extends SkillWall {
     var sSkillDesc = this.state.desc;
     var iSkillExp = this.state.exp;
 
-    // TODO: use js to create element, if exp > 0 append child to div
     return (
       <div className="skill-description">
         <h3>{sSkill}</h3>
         <p>{sSkillDesc}</p>
-        {this.renderExperienceSpan(iSkillExp)}
+        {this._renderExperienceSpan(iSkillExp)}
       </div>
     );
   }
