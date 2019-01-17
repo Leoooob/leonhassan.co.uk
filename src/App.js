@@ -17,7 +17,7 @@ class Header extends React.Component {
     return (
       <header>
         <h1>Leon Hassan</h1>
-        <p>I am currently working as a SAPUI5 \& Fiori developer and trying to update your average enterprise software to be a little more modern. </p>
+        <p>I am currently working as a SAPUI5 &amp; Fiori developer and trying to update your average enterprise software to be a little more modern. </p>
         <p>If you would like to get in touch, you can find me at the below links or email <strong>me(at)leonhassan(dot)co(dot)uk</strong>.</p>
         <ContactGlyphs/>
       </header>
@@ -207,8 +207,8 @@ class Content extends React.Component {
         <section>
           <h3>Capgemini</h3>
           <span>June 2017 - Present</span>
-          <p>I have worked for over a year at a secure project and I am currently the UI Development lead at this project. My responsibilities include running workshops with the client, designing & architecting Fiori solutions, developing UI5 applications, organise code reviews and run our daily development stand-up.</p>
-          <p>While at Capgemini I have also helped to develop a cloud automation tool for SAP systems, created standard training for those joining the SAP practice and organised a CodeJam.</p>
+          <p>Leon has worked for over a year at a secure project and is currently the UI Development lead at this project. His responsibilities include running workshops with the client, designing &amp; architecting Fiori solutions, developing UI5 applications, organising code reviews and running the daily development stand-up.</p>
+          <p>While at Capgemini Leon has also helped to develop a cloud automation tool for SAP systems, created standard training for those joining the SAP practice and organised a CodeJam.</p>
           <ReadMoreLink company="Capgemini" tag="capgemini" />
         </section><hr/>
 
