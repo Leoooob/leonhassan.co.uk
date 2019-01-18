@@ -184,11 +184,8 @@ class SkillDescription extends SkillWall {
   }
 
   _setState(oState) {
-    if (oState.skill === this.state.skill) {
-      this.setState(this._initState);
-    } else {
-      this.setState(oState);
-    }
+    let newState = (oState.skill === this.state.skill) ? this._initState : oState;
+    this.setState(newState);
   }
 
   _renderExperienceSpan(iSkillExp) {
