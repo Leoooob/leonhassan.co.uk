@@ -69,7 +69,7 @@ const aSkillObjs = [{
   {
     exp: 5,
     name: "CSS",
-    desc: "Leon is an advocate of using CSS to it's maximum rather than writing some dodgy JS to create the same effect as a few lines of smart styling."
+    desc: "Leon is an advocate of using CSS to it's maximum rather than writing flaky JS to create the same effect as a few lines of smart styling."
   },
   {
     exp: 5,
