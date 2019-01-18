@@ -150,7 +150,7 @@ function updateText(skill, desc, exp) {
 
 class SkillBricks extends SkillWall {
   render() {
-    var skillComponents = this.props.aSkillList.map(function(oSkill, iKey) {
+    let skillComponents = this.props.aSkillList.map(function(oSkill, iKey) {
       function onClickUpdateText(oEvent) {
         let sSkill = oEvent.target.textContent;
         let sDesc = oEvent.target.dataset.desc;
@@ -196,8 +196,8 @@ class SkillDescription extends SkillWall {
 
   render() {
     let sSkill = this.state.skill;
-    var sSkillDesc = this.state.desc;
-    var iSkillExp = this.state.exp;
+    let sSkillDesc = this.state.desc;
+    let iSkillExp = this.state.exp;
 
     return (
       <div className="skill-description">
