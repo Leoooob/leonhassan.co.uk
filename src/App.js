@@ -18,7 +18,7 @@ class Header extends React.Component {
       <header>
         <h1>Leon Hassan</h1>
         <p>I am currently working as a SAPUI5 &amp; Fiori developer and trying to update your average enterprise software to be a little more modern. </p>
-        <p>If you would like to get in touch, you can find me at the below links or email <strong>me(at)leonhassan(dot)co(dot)uk</strong>.</p>
+        <p>If you would like to get in touch, you can find me at the below links or email <strong>me<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><title>@</title><desc>at symbol</desc><path class="iconSecondary" d="M15.6 15.47A4.99 4.99 0 0 1 7 12a5 5 0 0 1 10 0v1.5a1.5 1.5 0 1 0 3 0V12a8 8 0 1 0-4.94 7.4 1 1 0 1 1 .77 1.84A10 10 0 1 1 22 12v1.5a3.5 3.5 0 0 1-6.4 1.97zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg>leonhassan.co.uk</strong>.</p>
         <ContactGlyphs/>
       </header>
     );
@@ -114,7 +114,7 @@ const aSkillObjs = [{
   {
     exp: 0,//4,
     name: "Agile",
-    desc: "Leon has worked in Agile teams throughout his career and has been an evangalist for Agile Methodologies since joining Capgemini, showcasing the difference between an Agile delivery vs Wagile or Waterfall."
+    desc: "Leon has worked in Agile teams throughout his career and has been an evangelist for Agile Methodologies since joining Capgemini, showcasing the difference between an Agile delivery vs Wagile or Waterfall."
   },
 ];
 
@@ -171,7 +171,7 @@ class SkillDescription extends SkillWall {
     this._initState = {
       skill: "Skill Description",
       exp: 0,
-      desc: "Click on a skill for some more information"
+      desc: "Click on a skill for some more information."
     };
 
     this.state = this._initState;
