@@ -215,32 +215,62 @@ class Content extends React.Component {
       <main>
         <h2>Experience</h2>
         <section>
-          <h3>Capgemini</h3>
-          <span>June 2017 - Present</span>
+          <ExperienceHeadings company="Capgemini" title="Front-End Developer" endDate="" startDate="June 2017" />
+          
           <p>Leon has worked for over a year at a secure project and is currently the UI Development Lead at this project. His responsibilities include running workshops with the client, designing &amp; architecting Fiori solutions, developing UI5 applications, organising code reviews and running the daily development stand-up.</p>
           <p>While at Capgemini Leon has also helped to develop a cloud automation tool for SAP systems, created standard training for those joining the SAP practice and organised a CodeJam.</p>
           <ReadMoreLink company="Capgemini" tag="capgemini" />
         </section><hr/>
 
         <section>
-          <h3>Atebol Interactive</h3>
-          <span>June 2016 - December 2016</span>
+          <ExperienceHeadings company="Atebol Interactive" title="Web Developer" endDate="December 2016" startDate="June 2016" />
+          
           <p>Atebol is a publishing company based in Aberystwyth, Leon worked here during the summer until January exams. During this time Leon was able to build web applications using Angular.js &amp; jQuery, he also worked closesly with a number of content-management systems such as Joomla and OpenCart.</p>
         </section><hr/>
 
         <section>
-          <h3>IBM</h3>
-          <span>June 2015 - June 2016 (Industral Year)</span>
+          <ExperienceHeadings company="IBM" title="Risks and Issues Coordinator" endDate="June 2016" startDate="June 2015" />
+
           <p>At IBM Leon worked as a database administrator for the DEFRA account, in his spare time he persued more challenging internal projects and took part in hackathons over a few weekends. During Leon's year at IBM he attended and won a number hackathons, some of which he went on to present to Robert LeBlanc (Senior VP of Cloud) and Damon Deaner (Director of Employee Experience &amp; HR Design).</p>
           <ReadMoreLink company="IBM" tag="ibm" />
         </section><hr/>
 
         <section>
-          <h3>Bottomline Technology</h3>
-          <span>June 2014 - September 2014</span>
+          <ExperienceHeadings company="Bottomline Technology" title="Front-End Developer" endDate="September 2014" startDate="June 2014" />
+
           <p>Leon worked as a QA Engineer over the Summer to gain a deeper understanding of delivering software and agile methodologies. In this role he introduced automated testing to his particular project, specifically regression testing that could be plugged into their Jenkins CI pipeline. Leon used RobotFramework (Selenium-based) with Python bindings to write plain-text scripts, for the particular product he was working on he also made use of the Gmail API to automate user-actions prompted by emails.</p>
         </section>
       </main>
+    );
+  }
+}
+
+class ExperienceHeadings extends Content {
+  _renderCompany() {
+    return <h3>{this.props.company}</h3>;
+  }
+
+  _renderTitle() {
+    return <h4>{this.props.title}</h4>;
+  }
+
+  _renderEndDate() {
+    return <span>{this.props.endDate ? this.props.endDate : "Present"}</span>;
+  }
+
+  _renderStartDate() {
+    return <span>{this.props.startDate}</span>;
+  }
+
+  render() {
+    return (
+      <div className="headings">
+        {this._renderCompany()}
+        {this._renderTitle()}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon"><path className="iconPrimary" d="M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm0 5v10h14V9H5z"/><path className="iconSecondary" d="M7 2a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm10 0a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1z"/></svg>
+        {this._renderEndDate()}
+        {this._renderStartDate()}
+      </div>
     );
   }
 }
