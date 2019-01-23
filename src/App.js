@@ -124,7 +124,7 @@ class SkillDescription extends SkillWall {
     updateText = updateText.bind(this);
   }
 
-  _resetState(){
+  _resetState() {
     this.setState(this._initState);
   }
 
