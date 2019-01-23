@@ -1,0 +1,45 @@
+[
+  {
+    "company": "Capgemini",
+    "title": "Front-End Developer",
+    "endDate": "",
+    "startDate": "June 2017",
+    "bReadMore": true,
+    "tag": "capgemini",
+    "description": [
+      "Leon has worked for over a year at a secure project and is currently the UI Development Lead at this project. His responsibilities include running workshops with the client, designing & architecting Fiori solutions, developing UI5 applications, organising code reviews and running the daily development stand-up.",
+      "While at Capgemini Leon has also helped to develop a cloud automation tool for SAP systems, created standard training for those joining the SAP practice and organised a CodeJam."
+    ]
+  },
+  {
+    "company": "Atebol Interactive",
+    "title": "Web Developer",
+    "endDate": "December 2016",
+    "startDate": "June 2016",
+    "bReadMore": false,
+    "description": [
+      "Atebol is a publishing company based in Aberystwyth, Leon worked here during the summer until January exams. During this time Leon was able to build web applications using Angular.js &amp; jQuery, he also worked closesly with a number of content-management systems such as Joomla and OpenCart."
+    ]
+  },
+  {
+    "company": "IBM",
+    "title": "Risks and Issues Coordinator",
+    "endDate": "June 2016",
+    "startDate": "June 2015",
+    "bReadMore": true,
+    "tag": "ibm",
+    "description": [
+      "At IBM Leon worked as a database administrator for the DEFRA account, in his spare time he persued more challenging internal projects and took part in hackathons over a few weekends. During Leon's year at IBM he attended and won a number hackathons, some of which he went on to present to Robert LeBlanc (Senior VP of Cloud) and Damon Deaner (Director of Employee Experience & HR Design)."
+    ]
+  },
+  {
+    "company": "Bottomline Technology",
+    "title": "QA Engineer",
+    "endDate": "September 2014",
+    "startDate": "June 2014",
+    "bReadMore": false,
+    "description": [
+      "Leon worked as a QA Engineer over the Summer to gain a deeper understanding of delivering software and agile methodologies. In this role he introduced automated testing to his particular project, specifically regression testing that could be plugged into their Jenkins CI pipeline. Leon used RobotFramework (Selenium-based) with Python bindings to write plain-text scripts, for the particular product he was working on he also made use of the Gmail API to automate user-actions prompted by emails."
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import SkillsList from "./data/skills.json";
+import Skills from "./data/skills.json";
+import Experience from "./data/experience.json";
 
 class App extends Component {
   render() {
@@ -94,7 +95,7 @@ function updateText(skill, desc, exp) {
 
 class SkillBricks extends SkillWall {
   render() {
-    let skillComponents = SkillsList.map(function(oSkill, iKey) {
+    let skillComponents = Skills.map(function(oSkill, iKey) {
       function onClickUpdateText(oEvent) {
         let sSkill = oEvent.target.textContent;
         let sDesc = oEvent.target.dataset.desc;
@@ -113,8 +114,8 @@ class SkillDescription extends SkillWall {
   constructor(props) {
     super(props);
     this._initState = {
-      skill: "Skill Description",
       exp: 0,
+      skill: "Skill Description",
       desc: "Click on a skill for some more information."
     };
 
@@ -157,36 +158,44 @@ class SkillDescription extends SkillWall {
 // TODO: component for paragraphs
 class Content extends React.Component {
   render() {
+    let ExperienceContent = Experience.map(function(section, iKey) {
+      return <ExperienceItem key={iKey} entry={section} />;
+    });
+
     return (
       <main>
         <h2>Experience</h2>
-        <section>
-          <ExperienceHeadings company="Capgemini" title="Front-End Developer" endDate="" startDate="June 2017" />
-          
-          <p>Leon has worked for over a year at a secure project and is currently the UI Development Lead at this project. His responsibilities include running workshops with the client, designing &amp; architecting Fiori solutions, developing UI5 applications, organising code reviews and running the daily development stand-up.</p>
-          <p>While at Capgemini Leon has also helped to develop a cloud automation tool for SAP systems, created standard training for those joining the SAP practice and organised a CodeJam.</p>
-          <ReadMoreLink company="Capgemini" tag="capgemini" />
-        </section><hr/>
-
-        <section>
-          <ExperienceHeadings company="Atebol Interactive" title="Web Developer" endDate="December 2016" startDate="June 2016" />
-          
-          <p>Atebol is a publishing company based in Aberystwyth, Leon worked here during the summer until January exams. During this time Leon was able to build web applications using Angular.js &amp; jQuery, he also worked closesly with a number of content-management systems such as Joomla and OpenCart.</p>
-        </section><hr/>
-
-        <section>
-          <ExperienceHeadings company="IBM" title="Risks and Issues Coordinator" endDate="June 2016" startDate="June 2015" />
-
-          <p>At IBM Leon worked as a database administrator for the DEFRA account, in his spare time he persued more challenging internal projects and took part in hackathons over a few weekends. During Leon's year at IBM he attended and won a number hackathons, some of which he went on to present to Robert LeBlanc (Senior VP of Cloud) and Damon Deaner (Director of Employee Experience &amp; HR Design).</p>
-          <ReadMoreLink company="IBM" tag="ibm" />
-        </section><hr/>
-
-        <section>
-          <ExperienceHeadings company="Bottomline Technology" title="Front-End Developer" endDate="September 2014" startDate="June 2014" />
-
-          <p>Leon worked as a QA Engineer over the Summer to gain a deeper understanding of delivering software and agile methodologies. In this role he introduced automated testing to his particular project, specifically regression testing that could be plugged into their Jenkins CI pipeline. Leon used RobotFramework (Selenium-based) with Python bindings to write plain-text scripts, for the particular product he was working on he also made use of the Gmail API to automate user-actions prompted by emails.</p>
-        </section>
+        {ExperienceContent}
       </main>
+    );
+  }
+}
+
+class ExperienceItem extends Content {
+  _renderReadMoreLink(sCompany, sTag) {
+    return <ReadMoreLink company={sCompany} tag={sTag} />;
+  }
+  render() {
+    var oEntry = this.props.entry;
+    var sCompany = oEntry.company;
+    var sTitle = oEntry.title;
+    var sEndDate = oEntry.endDate;
+    var sStartDate = oEntry.startDate;
+    var bReadMore = oEntry.bReadMore;
+    var sTag = oEntry.tag;
+    var aDescription = oEntry.description;
+
+    var description = aDescription.map(function(paragraph, iKey) {
+      return <p key={iKey}>{paragraph}</p>;
+    });
+
+    return (
+      <section>
+        <ExperienceHeadings company={sCompany} title={sTitle} endDate={sEndDate} startDate={sStartDate} />
+        {description}
+        {(bReadMore) ? this._renderReadMoreLink(sCompany, sTag) : null}
+        <hr />
+      </section>
     );
   }
 }
