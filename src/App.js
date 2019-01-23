@@ -153,6 +153,8 @@ class SkillDescription extends SkillWall {
   }
 }
 
+// TODO: abstract all experience data to json file
+// TODO: component for paragraphs
 class Content extends React.Component {
   render() {
     return (
