@@ -4,12 +4,12 @@ h1, h2 {
 
 h1, h2,
 a {
-  color: #f05f40;
+  color: hsl(11, 85%, 60%);
 }
 
 a:hover {
-  color: #fc4c27;
-  text-shadow: #f05f40 0px 0px 35px;
+  color: hsl(11, 100%, 50%);
+  text-shadow: hsl(11, 85%, 60%) 0px 0px 35px;
 }
 
 header {
@@ -25,7 +25,7 @@ header .glyphs {
 header .glyphs .print-only-view,
 .read-more .print-only-view {
   display: none;
-  color: #f05f40;
+  color: hsl(11, 85%, 60%);
 }
 
 .main-content {
@@ -116,7 +116,7 @@ aside .skill-wall ul.skills-list li {
 
  aside .skill-wall ul.skills-list li:hover {
   cursor: pointer;
-  color: #f05f40;
+  color: hsl(11, 85%, 60%);
  }
 
  aside .skill-wall .skill-description {
@@ -125,16 +125,16 @@ aside .skill-wall ul.skills-list li {
 
 aside .skill-wall .skill-description h3 {
   margin: 0 auto;
-  color: #f05f40;
+  color: hsl(11, 85%, 60%);
 }
 
 /* icons */
 .icon-primary {
-  fill: #f05f40;
+  fill: hsl(11, 85%, 60%);
 }
 
 .icon-secondary {
-  fill: #333;
+  fill: hsl(0, 0%, 20%);
 }
 
 .icon {
