@@ -32,16 +32,19 @@ class ContactGlyphs extends Header {
     return (
       <div className="glyphs">
         <span>
-          <a href="https://github.com/Leoooob" rel="noopener noreferrer" target="_blank">
+          <span className="print-only-view">https://github.com/Leoooob/</span>
+          <a href="https://github.com/Leoooob/" rel="noopener noreferrer" target="_blank">
             GitHub
           </a>
         </span>
         <span>
+          <span className="print-only-view">https://twitter.com/Consulting_LH/</span>
           <a href="https://twitter.com/Consulting_LH/" rel="noopener noreferrer" target="_blank">
             Twitter
           </a>
         </span>
         <span>
+          <span className="print-only-view">https://www.linkedin.com/in/leonhassan/</span>
           <a href="https://www.linkedin.com/in/leonhassan/" rel="noopener noreferrer" target="_blank">
             LinkedIn
           </a>
@@ -173,6 +176,7 @@ class ExperienceItem extends Content {
   _renderReadMoreLink(sCompany, sTag) {
     return <ReadMoreLink company={sCompany} tag={sTag} />;
   }
+
   render() {
     var oEntry = this.props.entry;
     var sCompany = oEntry.company;
@@ -232,6 +236,7 @@ class ReadMoreLink extends Content {
   render() {
     return (
       <div className="readMore">
+        <span className="print-only-view">{"https://blog.leonhassan.co.uk/tag/" + this.props.tag}</span>
         <a href={"https://blog.leonhassan.co.uk/tag/" + this.props.tag} rel="noopener noreferrer" target="_blank">
           Read more about my experience at {this.props.company} here. 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon"><path className="iconPrimary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"/><path className="iconSecondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"/></svg>

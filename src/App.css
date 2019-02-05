@@ -22,6 +22,12 @@ header .glyphs {
   grid-template-columns: repeat(3, auto);
 }
 
+header .glyphs .print-only-view,
+.readMore .print-only-view {
+  display: none;
+  color: #f05f40;
+}
+
 .mainContent {
   display: grid;
   grid-gap: 2em;
@@ -139,4 +145,19 @@ aside .skill-wall .skill-description h3 {
 
 .icon.btn {
   padding: 8px;
+}
+
+
+/* print preview styles */
+@media print {
+  .glyphs a,
+  .readMore a,
+  aside .skill-wall .skill-description {
+    display: none;
+  }
+
+  header .glyphs .print-only-view,
+  .readMore .print-only-view {
+    display: inline-block;
+  }
 }
