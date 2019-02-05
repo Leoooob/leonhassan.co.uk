@@ -23,12 +23,12 @@ header .glyphs {
 }
 
 header .glyphs .print-only-view,
-.readMore .print-only-view {
+.read-more .print-only-view {
   display: none;
   color: #f05f40;
 }
 
-.mainContent {
+.main-content {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: max-content auto;
@@ -70,7 +70,7 @@ main section .headings :nth-child(5) {
   text-align: center;
 }
 
-main section .readMore {
+main section .read-more {
   text-align: right;
 }
 
@@ -129,11 +129,11 @@ aside .skill-wall .skill-description h3 {
 }
 
 /* icons */
-.iconPrimary {
+.icon-primary {
   fill: #f05f40;
 }
 
-.iconSecondary {
+.icon-secondary {
   fill: #333;
 }
 
@@ -151,13 +151,13 @@ aside .skill-wall .skill-description h3 {
 /* print preview styles */
 @media print {
   .glyphs a,
-  .readMore a,
+  .read-more a,
   aside .skill-wall .skill-description {
     display: none;
   }
 
   header .glyphs .print-only-view,
-  .readMore .print-only-view {
+  .read-more .print-only-view {
     display: inline-block;
   }
 }
