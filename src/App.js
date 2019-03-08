@@ -44,6 +44,12 @@ class ContactGlyphs extends Header {
           </a>
         </span>
         <span>
+          <span className="print-only-view">https://blog.leonhassan.co.uk/</span>
+          <a href="https://blog.leonhassan.co.uk/" rel="noopener noreferrer" target="_blank">
+            Blog
+          </a>
+        </span>
+        <span>
           <span className="print-only-view">https://www.linkedin.com/in/leonhassan/</span>
           <a href="https://www.linkedin.com/in/leonhassan/" rel="noopener noreferrer" target="_blank">
             LinkedIn
@@ -116,6 +122,7 @@ class SkillBricks extends SkillWall {
 class SkillDescription extends SkillWall {
   constructor(props) {
     super(props);
+    
     this._initState = {
       exp: 0,
       skill: "Skill Description",
