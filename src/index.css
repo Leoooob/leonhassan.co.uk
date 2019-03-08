@@ -15,7 +15,11 @@ code {
 }
 
 /* highlight in house colours */
-::selection,
+::selection {
+  color: hsl(0, 0%, 95%);
+  background: hsl(11, 85%, 60%);
+}
+
 ::-moz-selection {
   color: hsl(0, 0%, 95%);
   background: hsl(11, 85%, 60%);
