@@ -16,7 +16,6 @@ header {
   text-align: center;
 }
 
-/* TODO: responsive scaling */
 header .glyphs {
   display: grid;
   margin: 2em 0;
@@ -29,7 +28,6 @@ header .glyphs .print-only-view,
   color: hsl(11, 85%, 60%);
 }
 
-/* TODO: responsive scaling */
 .main-content {
   display: grid;
   grid-gap: 2em;
@@ -149,6 +147,21 @@ aside .skill-wall .skill-description h3 {
   padding: 8px;
 }
 
+/* responsive media queries */
+@media screen and (max-width: 980px) {
+  .main-content aside {
+    display: none;
+  }
+
+  .main-content {
+    display: inline-block;
+  }
+
+  header .glyphs {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+  }
+}
 
 /* print preview styles */
 @media print {
