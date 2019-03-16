@@ -148,7 +148,7 @@ aside .skill-wall .skill-description h3 {
 }
 
 /* responsive media queries */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 980px), print {
   .main-content {
     display: grid;
     grid-template-rows: max-content auto;
@@ -179,8 +179,7 @@ aside .skill-wall .skill-description h3 {
 
 /* print preview styles */
 @media print {
-  .read-more a .web-text,
-  aside .skill-wall .skill-description {
+  .read-more a .web-text {
     display: none;
   }
 
