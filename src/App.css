@@ -149,12 +149,26 @@ aside .skill-wall .skill-description h3 {
 
 /* responsive media queries */
 @media screen and (max-width: 980px) {
+  .main-content {
+    display: grid;
+    grid-template-rows: max-content auto;
+    grid-template-columns: auto;
+  }
+
+  .main-content main {
+    grid-row: 1;
+  }
+
   .main-content aside {
+    grid-row: 2;
+  }
+
+  .main-content aside .location {
     display: none;
   }
 
-  .main-content {
-    display: inline-block;
+  .main-content aside .skill-wall {
+    grid-template-columns: auto;
   }
 
   header .glyphs {
