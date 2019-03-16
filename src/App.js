@@ -43,7 +43,7 @@ class ContactGlyphs extends Header {
         </span>
         <span>
           <a href="https://blog.leonhassan.co.uk/" rel="noopener noreferrer" target="_blank">
-            Blog
+            Blog<span className="print-only-view">.leonhassan.co.uk</span>
           </a>
         </span>
         <span>
