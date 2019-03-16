@@ -152,14 +152,13 @@ aside .skill-wall .skill-description h3 {
 
 /* print preview styles */
 @media print {
-  .glyphs a,
-  .read-more a,
+  .read-more a .web-text,
   aside .skill-wall .skill-description {
     display: none;
   }
 
   header .glyphs .print-only-view,
-  .read-more .print-only-view {
+  .read-more a span.print-only-view {
     display: inline-block;
   }
 }
