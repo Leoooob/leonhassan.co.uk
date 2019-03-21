@@ -127,6 +127,7 @@ class SkillDescription extends SkillWall {
 
     this.state = this._initState;
 
+    // eslint-disable-next-line
     updateText = updateText.bind(this);
   }
 
