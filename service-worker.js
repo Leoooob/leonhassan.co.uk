@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/leonhassan.co.uk/precache-manifest.c80d4735c219c01df2a395a4a9b0e258.js"
+  "/leonhassan.co.uk/precache-manifest.da0a91dcb22f19e8bc6371f92b9fc2ff.js"
 );
 
 workbox.clientsClaim();
