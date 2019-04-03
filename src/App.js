@@ -144,6 +144,7 @@ class SkillDescription extends SkillWall {
   }
 
   _setState(oState) {
+    //TODO: highlight skill-bricks when you're selecting a new one, de-select the old.
     let newState = (oState.skill === this.state.skill) ? this._initState : oState;
     this.setState(newState);
   }
