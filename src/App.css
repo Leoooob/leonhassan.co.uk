@@ -7,11 +7,6 @@ a {
   color: hsl(11, 85%, 60%);
 }
 
-a:hover {
-  color: hsl(11, 100%, 50%);
-  text-shadow: hsl(11, 85%, 60%) 0px 0px 35px;
-}
-
 header {
   text-align: center;
 }
@@ -114,11 +109,6 @@ aside .skill-wall ul.skills-list li {
   display: inline-block;
  }
 
- aside .skill-wall ul.skills-list li:hover {
-  cursor: pointer;
-  color: hsl(11, 85%, 60%);
- }
-
  aside .skill-wall .skill-description {
   padding: 1em;
 }
@@ -186,5 +176,18 @@ aside .skill-wall .skill-description h3 {
   header .glyphs .print-only-view,
   .read-more a span.print-only-view {
     display: inline-block;
+  }
+}
+
+/* fine pointer devices (stops mobile sticky hovers) */
+@media (pointer:fine) {
+  a:hover {
+    color: hsl(11, 100%, 50%);
+    text-shadow: hsl(11, 85%, 60%) 0px 0px 35px;
+  }
+
+  aside .skill-wall ul.skills-list li:hover {
+   cursor: pointer;
+   color: hsl(11, 85%, 60%);
   }
 }
