@@ -131,6 +131,14 @@ class SkillDescription extends SkillWall {
     updateText = updateText.bind(this);
   }
 
+  componentDidUpdate() {
+    let iWindowWidth = window.innerWidth;
+    if (iWindowWidth < 980) {
+      let eSkillDesc = document.getElementById("skill-description");
+      eSkillDesc.scrollIntoView();
+    }
+  }
+
   _resetState() {
     this.setState(this._initState);
   }
@@ -152,7 +160,7 @@ class SkillDescription extends SkillWall {
     let iSkillExp = this.state.exp;
 
     return (
-      <div className="skill-description">
+      <div id="skill-description" className="skill-description">
         <h3>{sSkill}</h3>
         <p>{sSkillDesc}</p>
         {this._renderExperienceSpan(iSkillExp)}
