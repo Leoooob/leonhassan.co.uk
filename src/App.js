@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Skills from "./data/skills.json";
 import Experience from "./data/experience.json";
+import FioriCert from "./img/C_FIORDEV_20.png";
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <div>
           <Header/>
           <Body/>
+          <Footer/>
       </div>
     );
   }
@@ -155,6 +157,12 @@ class SkillDescription extends SkillWall {
     }
   }
 
+  _renderCertificationBadge() {
+    if (this.state.skill === "Fiori") {
+      return <a href="https://www.youracclaim.com/badges/7739d664-8cfb-4905-ad6e-3d30dcff070d/public_url"><img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" /></a>;
+    }
+  }
+
   render() {
     let sSkill = this.state.skill;
     let sSkillDesc = this.state.desc;
@@ -164,6 +172,7 @@ class SkillDescription extends SkillWall {
       <div id="skill-description" className="skill-description">
         <h3>{sSkill}</h3>
         <p>{sSkillDesc}</p>
+        {this._renderCertificationBadge()}
         {this._renderExperienceSpan(iSkillExp)}
       </div>
     );
@@ -260,6 +269,16 @@ class ReadMoreLink extends Content {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon"><path className="icon-primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"/><path className="icon-secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"/></svg>
         </a>
       </div>
+    );
+  }
+}
+
+class Footer extends React.Component {
+  render() {
+    return(
+      <footer className="print-only-view">
+        <img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" />
+      </footer>
     );
   }
 }

@@ -19,7 +19,6 @@ header .glyphs {
 
 header .glyphs .print-only-view,
 .read-more .print-only-view {
-  display: none;
   color: hsl(11, 85%, 60%);
 }
 
@@ -168,13 +167,16 @@ aside .skill-wall .skill-description h3 {
 }
 
 /* print preview styles */
+.print-only-view {
+  display: none;
+}
+
 @media print {
   .read-more a .web-text {
     display: none;
   }
 
-  header .glyphs .print-only-view,
-  .read-more a span.print-only-view {
+  .print-only-view {
     display: inline-block;
   }
 }
@@ -190,4 +192,13 @@ aside .skill-wall .skill-description h3 {
    cursor: pointer;
    color: hsl(11, 85%, 60%);
   }
+}
+
+.certificate-badge {
+  width: 100%;
+  height: auto;
+}
+
+.print-only-view .certificate-badge {
+  max-width: 15rem;
 }
