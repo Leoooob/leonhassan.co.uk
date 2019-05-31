@@ -117,6 +117,16 @@ aside .skill-wall .skill-description h3 {
   color: hsl(11, 85%, 60%);
 }
 
+.certificate-badge {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.print-only-view .certificate-badge {
+  max-width: 15rem;
+}
+
 /* icons */
 .icon-primary {
   fill: hsl(11, 85%, 60%);
@@ -192,13 +202,4 @@ aside .skill-wall .skill-description h3 {
    cursor: pointer;
    color: hsl(11, 85%, 60%);
   }
-}
-
-.certificate-badge {
-  width: 100%;
-  height: auto;
-}
-
-.print-only-view .certificate-badge {
-  max-width: 15rem;
 }
