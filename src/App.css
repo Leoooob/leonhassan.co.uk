@@ -176,6 +176,11 @@ aside .skill-wall .skill-description h3 {
   }
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+}
+
 /* print preview styles */
 .print-only-view {
   display: none;
