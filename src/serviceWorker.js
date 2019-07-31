@@ -92,7 +92,8 @@ function registerValidSW(swUrl, config) {
               var text = document.createTextNode("Content is cached for offline use.");
               snackbar.appendChild(text);
               snackbar.className = "snackbar show";
-              document.append(snackbar);
+              var body = document.getElementsByTagName("body");
+              body.append(snackbar);
               
               setTimeout(() => {
                 snackbar.className = snackbar.className.replace("show", "")
