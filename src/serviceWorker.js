@@ -87,6 +87,17 @@ function registerValidSW(swUrl, config) {
               console.log('Content is cached for offline use.');
 
               //TODO: display message to the user for offline readiness
+              
+              var snackbar = document.createElement("div");
+              var text = document.createTextNode("Content is cached for offline use.");
+              snackbar.appendChild(text);
+              snackbar.className = "snackbar show";
+              document.append(snackbar);
+              
+              setTimeout(() => {
+                snackbar.className = snackbar.className.replace("show", "")
+              }, 3000);
+              
 
               // Execute callback
               if (config && config.onSuccess) {
@@ -124,6 +135,7 @@ function checkValidServiceWorker(swUrl, config) {
       }
     })
     .catch(() => {
+      //TODO: add snackbar notification
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
