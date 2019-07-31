@@ -73,8 +73,6 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See http://bit.ly/CRA-PWA.'
               );
-              
-              //TODO: show new content message to the user
               createSnackbar("New content is available and will be used when all tabs for this page are closed.");
 
               // Execute callback
@@ -86,8 +84,6 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
-
-              //TODO: display message to the user for offline readiness
               createSnackbar("Content is cached for offline use.");
               
 
@@ -115,7 +111,7 @@ function createSnackbar(message) {
   
   setTimeout(() => {
     snackbar.className = snackbar.className.replace("show", "")
-  }, 3000);
+  }, 5000);
 }
 
 function checkValidServiceWorker(swUrl, config) {
@@ -140,7 +136,6 @@ function checkValidServiceWorker(swUrl, config) {
       }
     })
     .catch(() => {
-      //TODO: add snackbar notification
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
