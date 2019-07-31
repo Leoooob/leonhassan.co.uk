@@ -73,6 +73,8 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See http://bit.ly/CRA-PWA.'
               );
+              
+              //TODO: show new content message to the user
 
               // Execute callback
               if (config && config.onUpdate) {
@@ -83,6 +85,8 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
+
+              //TODO: display message to the user for offline readiness
 
               // Execute callback
               if (config && config.onSuccess) {
