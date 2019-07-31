@@ -75,6 +75,7 @@ function registerValidSW(swUrl, config) {
               );
               
               //TODO: show new content message to the user
+              createSnackbar("New content is available and will be used when all tabs for this page are closed.");
 
               // Execute callback
               if (config && config.onUpdate) {
@@ -87,17 +88,7 @@ function registerValidSW(swUrl, config) {
               console.log('Content is cached for offline use.');
 
               //TODO: display message to the user for offline readiness
-              
-              var snackbar = document.createElement("div");
-              var text = document.createTextNode("Content is cached for offline use.");
-              snackbar.appendChild(text);
-              snackbar.className = "snackbar show";
-              
-              document.body.append(snackbar);
-              
-              setTimeout(() => {
-                snackbar.className = snackbar.className.replace("show", "")
-              }, 3000);
+              createSnackbar("Content is cached for offline use.");
               
 
               // Execute callback
@@ -112,6 +103,19 @@ function registerValidSW(swUrl, config) {
     .catch(error => {
       console.error('Error during service worker registration:', error);
     });
+}
+
+function createSnackbar(message) {
+  var snackbar = document.createElement("div");
+  var text = document.createTextNode(message);
+  snackbar.appendChild(text);
+  snackbar.className = "snackbar show";
+  
+  document.body.append(snackbar);
+  
+  setTimeout(() => {
+    snackbar.className = snackbar.className.replace("show", "")
+  }, 3000);
 }
 
 function checkValidServiceWorker(swUrl, config) {
@@ -140,6 +144,8 @@ function checkValidServiceWorker(swUrl, config) {
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
+
+      createSnackbar("No internet connection found, app is running in offline mode");
     });
 }
 
