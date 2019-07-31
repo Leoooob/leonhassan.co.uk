@@ -73,6 +73,9 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See http://bit.ly/CRA-PWA.'
               );
+              
+              //TODO: show new content message to the user
+              createSnackbar("New content is available and will be used when all tabs for this page are closed.");
 
               // Execute callback
               if (config && config.onUpdate) {
@@ -83,6 +86,10 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
+
+              //TODO: display message to the user for offline readiness
+              createSnackbar("Content is cached for offline use.");
+              
 
               // Execute callback
               if (config && config.onSuccess) {
@@ -96,6 +103,19 @@ function registerValidSW(swUrl, config) {
     .catch(error => {
       console.error('Error during service worker registration:', error);
     });
+}
+
+function createSnackbar(message) {
+  var snackbar = document.createElement("div");
+  var text = document.createTextNode(message);
+  snackbar.appendChild(text);
+  snackbar.className = "snackbar show";
+  
+  document.body.append(snackbar);
+  
+  setTimeout(() => {
+    snackbar.className = snackbar.className.replace("show", "")
+  }, 3000);
 }
 
 function checkValidServiceWorker(swUrl, config) {
@@ -120,9 +140,12 @@ function checkValidServiceWorker(swUrl, config) {
       }
     })
     .catch(() => {
+      //TODO: add snackbar notification
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
+
+      createSnackbar("No internet connection found, app is running in offline mode");
     });
 }
 

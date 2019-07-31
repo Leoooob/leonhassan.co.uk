@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import Skills from "./data/skills.json";
 import Experience from "./data/experience.json";
-import FioriCert from "./img/C_FIORDEV_20.png";
+import FioriCert from "./img/C_FIORIDEV_20.jpg";
+import FioriWebP from "./img/C_FIORIDEV_20.webp";
 
 class App extends Component {
   render() {
@@ -159,7 +160,8 @@ class SkillDescription extends SkillWall {
 
   _renderCertificationBadge() {
     if (this.state.skill === "Fiori") {
-      return <a href="https://www.youracclaim.com/badges/7739d664-8cfb-4905-ad6e-3d30dcff070d/public_url"><img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" /></a>;
+      const picture = <picture><source type="image/webp" srcSet={FioriWebP} /><img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" /></picture>;
+      return <a href="https://www.youracclaim.com/badges/7739d664-8cfb-4905-ad6e-3d30dcff070d/public_url">{picture}</a>;
     }
   }
 
@@ -276,9 +278,12 @@ class ReadMoreLink extends Content {
 class Footer extends React.Component {
   render() {
     return(
-      <footer className="print-only-view">
-        <img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" />
-      </footer>
+        <footer>
+          <picture>
+            <source type="image/webp" srcSet={FioriWebP} /> 
+            <img className="print-only-view certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" />
+          </picture>
+        </footer>
     );
   }
 }
