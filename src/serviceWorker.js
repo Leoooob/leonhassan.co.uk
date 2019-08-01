@@ -101,13 +101,28 @@ function registerValidSW(swUrl, config) {
     });
 }
 
+function createSnackbarContainer() {
+  let container = document.getElementById("snackbar-container");
+
+  if (!container) {
+    container = document.createElement("div");
+    container.className = "snackbar-container";
+    container.id = "snackbar-container";
+    document.body.append(container);
+  }
+}
+
 function createSnackbar(message) {
+  createSnackbarContainer();
+
   var snackbar = document.createElement("div");
   var text = document.createTextNode(message);
   snackbar.appendChild(text);
   snackbar.className = "snackbar show";
+
+  var container = document.getElementById("snackbar-container");
   
-  document.body.append(snackbar);
+  container.append(snackbar);
   
   setTimeout(() => {
     snackbar.className = snackbar.className.replace("show", "")
