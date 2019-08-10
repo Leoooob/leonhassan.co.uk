@@ -3,27 +3,42 @@
   "name": "Leon Hassan's Portfolio",
   "icons": [
     {
-      "src": "favicon x32.png",
+      "src": "launcher_icon_32.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "launcher_icon_32.png",
       "type": "image/png",
       "sizes": "32x32"
     },
     {
-      "src": "favicon x64.png",
+      "src": "launcher_icon_64.png",
       "type": "image/png",
       "sizes": "64x64"
     },
     {
-      "src": "favicon x128.png",
+      "src": "launcher_icon_96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "launcher_icon_128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "favicon x256.png",
+      "src": "launcher_icon_160.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "160x160"
     },
     {
-      "src": "favicon x512.png",
+      "src": "launcher_icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "launcher_icon_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
