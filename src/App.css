@@ -262,6 +262,9 @@ footer {
 }
 
 @media print {
+  .certificate-badge {
+    display: none;
+  }
   .read-more a .web-text {
     display: none;
   }

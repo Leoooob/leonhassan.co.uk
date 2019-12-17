@@ -4,6 +4,8 @@ import Skills from "./data/skills.json";
 import Experience from "./data/experience.json";
 import FioriCert from "./img/C_FIORIDEV_20.jpg";
 import FioriWebP from "./img/C_FIORIDEV_20.webp";
+import SCPCert from "./img/C_CP_11.jpg";
+import SCPWebP from "./img/C_CP_11.webp";
 
 class App extends Component {
   render() {
@@ -162,6 +164,9 @@ class SkillDescription extends SkillWall {
     if (this.state.skill === "Fiori") {
       const picture = <picture><source type="image/webp" srcSet={FioriWebP} /><img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" /></picture>;
       return <a href="https://www.youracclaim.com/badges/7739d664-8cfb-4905-ad6e-3d30dcff070d/public_url">{picture}</a>;
+    } else if (this.state.skill === "SCP") {
+      const picture = <picture><source type="image/webp" srcSet={SCPWebP} /><img className="certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge" /></picture>;
+      return <a href="https://www.youracclaim.com/badges/22cbf6f4-cd92-4a7d-b92b-5752b3d057b1/public_url">{picture}</a>;
     }
   }
 
@@ -282,6 +287,10 @@ class Footer extends React.Component {
           <picture>
             <source type="image/webp" srcSet={FioriWebP} /> 
             <img className="print-only-view certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" />
+          </picture>
+          <picture>
+            <source type="image/webp" srcSet={SCPWebP} /> 
+            <img className="print-only-view certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge" />
           </picture>
         </footer>
     );

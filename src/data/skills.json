@@ -53,5 +53,10 @@
     "exp": 0,
     "name": "Agile",
     "desc": "Leon has worked in Agile teams throughout his career and has been an evangelist for Agile Methodologies since joining Capgemini, showcasing the difference between a true Agile delivery and Wagile/Waterfall."
+  },
+  {
+    "exp": 0,
+    "name": "SCP",
+    "desc": "Leon has worked with the SAP Cloud Platform extensively since joining Capgemini and is knowledgeable in many areas of the SCP including the infrastructure it runs atop."
   }
 ]
