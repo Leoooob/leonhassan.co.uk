@@ -297,6 +297,10 @@ class Footer extends React.Component {
             <source type="image/webp" srcSet={SCPWebP} /> 
             <img className="print-only-view certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge" />
           </picture>
+          <picture>
+            <source type="image/webp" srcSet={PSMWebP} /> 
+            <img className="print-only-view certificate-badge" src={PSMCert} alt="Professional Scrum Master Certification badge" />
+          </picture>
         </footer>
     );
   }
