@@ -6,6 +6,8 @@ import FioriCert from "./img/C_FIORIDEV_20.jpg";
 import FioriWebP from "./img/C_FIORIDEV_20.webp";
 import SCPCert from "./img/C_CP_11.jpg";
 import SCPWebP from "./img/C_CP_11.webp";
+import PSMCert from "./img/PSM.jpg";
+import PSMWebP from "./img/PSM.webp";
 
 class App extends Component {
   render() {
@@ -167,6 +169,9 @@ class SkillDescription extends SkillWall {
     } else if (this.state.skill === "SCP") {
       const picture = <picture><source type="image/webp" srcSet={SCPWebP} /><img className="certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge" /></picture>;
       return <a href="https://www.youracclaim.com/badges/22cbf6f4-cd92-4a7d-b92b-5752b3d057b1/public_url">{picture}</a>;
+    } else if (this.state.skill === "Agile") {
+      const picture = <picture><source type="image/webp" srcSet={PSMWebP} /><img className="certificate-badge" src={PSMCert} alt="Professional Scrum Master Certification badge" /></picture>;
+      return <a href="https://www.scrum.org/certificates/541977">{picture}</a>;
     }
   }
 
@@ -210,7 +215,7 @@ class ExperienceItem extends Content {
     var oEntry = this.props.entry;
     var sCompany = oEntry.company;
     var sTitle = oEntry.title;
-    var sEndDate = oEntry.endDate;
+    var sEndDate = oEntry.endDate;  
     var sStartDate = oEntry.startDate;
     var bReadMore = oEntry.bReadMore;
     var sTag = oEntry.tag;

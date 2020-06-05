@@ -1,31 +1,31 @@
 [
   {
-    "exp": 5,
+    "exp": 6,
     "name": "JavaScript",
     "desc": "Leon writes JavaScript day-to-day and strives for simple and concise code, with progressive enhancements being a key foundation of his style."
   },
   {
-    "exp": 5,
+    "exp": 6,
     "name": "CSS",
     "desc": "Leon is an advocate of CSS and aims to use CSS where appropriate rather than using JS as a sledgehammer for the same effect."
   },
   {
-    "exp": 5,
+    "exp": 6,
     "name": "HTML",
     "desc": "Leon has been following HTML standards since learning about the power of semantic mark-up and how difficult browsing the web can be for those that rely on a developers understanding accessibility."
   },
   {
-    "exp": 3,
+    "exp": 4,
     "name": "Node.js",
     "desc": "Leon has used Node extensively for local development setup and more recently in building the Capgemini Cloud Automation tool for SAP Systems."
   },
   {
-    "exp": 1,
+    "exp": 2,
     "name": "React",
     "desc": "Leon has built his own component-based UIs before in pure JS before beginning his React journey, now he is learning the ins and outs of the framework itself."
   },
   {
-    "exp": 2,
+    "exp": 3,
     "name": "SAPUI5",
     "desc": "Leon builds enterprise SAPUI5 applications in his day-job and is intimately familiar with the framework and it's shortcomings. This combined with Leons knowledge of the web makes him invaluable when advising on technologies and implementation/integration strategies."
   },
@@ -35,12 +35,12 @@
     "desc": "Leon follows Web Standards and is trying to engage with them at the explainer level to better understand and contribute to the growth of the web."
   },
   {
-    "exp": 2,
+    "exp": 3,
     "name": "SAP",
     "desc": "Leon has gained invaluable experience in both Gateway and S4Hana systems through high-profile engagements."
   },
   {
-    "exp": 2,
+    "exp": 3,
     "name": "Fiori",
     "desc": "Leon is a Capgemini expert on Fiori 2.0 and is used to reigning in designs to meet the Fiori design principals. Leons focus is currently on expanding the Capgemini front-end development capability outside of SAPUI5 to fully support Fiori 3.0."
   },
@@ -52,7 +52,7 @@
   {
     "exp": 0,
     "name": "Agile",
-    "desc": "Leon has worked in Agile teams throughout his career and has been an evangelist for Agile Methodologies since joining Capgemini, showcasing the difference between a true Agile delivery and Wagile/Waterfall."
+    "desc": "Leon is an evangelist for Agile Methodologies, showcasing the difference between a truly Agile delivery and enterprise Wagile/Waterfall. Leon is a certified Professional Scrum Master"
   },
   {
     "exp": 0,
