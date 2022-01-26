@@ -4,6 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "global": "^4.4.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "^3.0.1"

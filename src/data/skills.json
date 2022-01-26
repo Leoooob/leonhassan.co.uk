@@ -1,31 +1,31 @@
 [
   {
-    "exp": 6,
+    "exp": 8,
     "name": "JavaScript",
     "desc": "Leon writes JavaScript day-to-day and strives for simple and concise code, with progressive enhancements being a key foundation of his style."
   },
   {
-    "exp": 6,
+    "exp": 8,
     "name": "CSS",
     "desc": "Leon is an advocate of CSS and aims to use CSS where appropriate rather than using JS as a sledgehammer for the same effect."
   },
   {
-    "exp": 6,
+    "exp": 8,
     "name": "HTML",
     "desc": "Leon has been following HTML standards since learning about the power of semantic mark-up and how difficult browsing the web can be for those that rely on a developers understanding accessibility."
   },
   {
-    "exp": 4,
+    "exp": 6,
     "name": "Node.js",
     "desc": "Leon has used Node extensively for local development setup and more recently in building the Capgemini Cloud Automation tool for SAP Systems."
   },
   {
     "exp": 2,
     "name": "React",
-    "desc": "Leon has built his own component-based UIs before in pure JS before beginning his React journey, now he is learning the ins and outs of the framework itself."
+    "desc": "Leon has developed his own component-based interfaces in plain JS before beginning his React journey. Leon has since architected and delivered the Capgemini Advisory Solutions, built in React with Material UI."
   },
   {
-    "exp": 3,
+    "exp": 5,
     "name": "SAPUI5",
     "desc": "Leon builds enterprise SAPUI5 applications in his day-job and is intimately familiar with the framework and it's shortcomings. This combined with Leons knowledge of the web makes him invaluable when advising on technologies and implementation/integration strategies."
   },
@@ -35,14 +35,14 @@
     "desc": "Leon follows Web Standards and is trying to engage with them at the explainer level to better understand and contribute to the growth of the web."
   },
   {
-    "exp": 3,
+    "exp": 5,
     "name": "SAP",
-    "desc": "Leon has gained invaluable experience in both Gateway and S4Hana systems through high-profile engagements."
+    "desc": "Leon has worked on high-profile SAP projects, ranging from huge S/4hana transformations to customising Work Manager using open web extensions."
   },
   {
-    "exp": 3,
+    "exp": 5,
     "name": "Fiori",
-    "desc": "Leon is a Capgemini expert on Fiori 2.0 and is used to reigning in designs to meet the Fiori design principals. Leons focus is currently on expanding the Capgemini front-end development capability outside of SAPUI5 to fully support Fiori 3.0."
+    "desc": "Leon is an expert in Fiori guidelines and has vast experience in designing and developing applications that adhere to Fiori design principles. Leon has been focused on developing additional capability within his team for Fiori in other frameworks such as React."
   },
   {
     "exp": 0,
@@ -52,11 +52,11 @@
   {
     "exp": 0,
     "name": "Agile",
-    "desc": "Leon is an evangelist for Agile Methodologies, showcasing the difference between a truly Agile delivery and enterprise Wagile/Waterfall. Leon is a certified Professional Scrum Master"
+    "desc": "Leon is an evangelist for Agile Methodologies, showcasing the difference between a truly Agile delivery and enterprise Wagile/Waterfall. Leon is a certified Professional Scrum Master."
   },
   {
     "exp": 0,
     "name": "SCP",
-    "desc": "Leon has worked with the SAP Cloud Platform extensively since joining Capgemini and is knowledgeable in many areas of the SCP including the infrastructure it runs atop."
+    "desc": "Leon has worked with the SAP Cloud Platform (now named BTP) extensively and is knowledgeable in many areas of the services available, such as the mobile development kit and conversational AI."
   }
 ]
