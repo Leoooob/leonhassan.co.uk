@@ -1,14 +1,15 @@
 [
   {
     "company": "Capgemini",
-    "title": "Front-End Developer",
+    "title": "UI Development Team Lead",
     "endDate": "",
     "startDate": "June 2017",
     "bReadMore": true,
     "tag": "capgemini",
     "description": [
-      "Leon has worked at a number of high-profile engagements, including secure projects and is currently the UI Development Lead at a utilities enagement. His responsibilities include running workshops with the client, designing & architecting Fiori solutions, developing UI5 applications, organising code reviews and running the daily development stand-up.",
-      "While at Capgemini Leon has also helped to develop a cloud automation tool for SAP systems, created standard technical training for those joining the SAP practice and organised a CodeJam."
+      "Leon has been leading the SAP UI development team since 2019, he has grown the team from 5 to 14 in that time.",
+      "Leon has worked at a number of clients in various markets, including utilities, oil & gas, and aerospace & defense. Leon's role on projects is a mixture of development manager and solution architect with responsibilities including running client workshops, designing & architecting Fiori solutions, project management, maintaining development quality, and agile coach.",
+      "At Capgemini Leon has also helped to develop various internal tools such as: cloud automation tool for SAP systems (CCAS), and Capgemini Advisory Services Online (CASO). He has also created standard technical training and onboarding for those joining the SAP practice, and organised several hackathons and codejams."
     ]
   },
   {
