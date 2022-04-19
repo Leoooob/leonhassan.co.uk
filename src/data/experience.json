@@ -10,6 +10,61 @@
       "Leon has been leading the SAP UI development team since 2019, he has grown the team from 5 to 14 in that time.",
       "Leon has worked at a number of clients in various markets, including utilities, oil & gas, and aerospace & defense. Leon's role on projects is a mixture of development manager and solution architect with responsibilities including running client workshops, designing & architecting Fiori solutions, project management, maintaining development quality, and agile coach.",
       "At Capgemini Leon has also helped to develop various internal tools such as: cloud automation tool for SAP systems (CCAS), and Capgemini Advisory Services Online (CASO). He has also created standard technical training and onboarding for those joining the SAP practice, and organised several hackathons and codejams."
+    ],
+    "projects": [
+      {
+        "client": "bp",
+        "location": "Remote / Global",
+        "role": "Fiori development lead / Technical Architect",
+        "startDate": "June 2021 ",
+        "description": [
+          "Leon is currently working at bp as a technical architect for Mobile and Portals, he is responsible for several SAP technical portals both internal and customer-facing. Leon started on this project leading the Fiori workstream specifically but is now responsible for the overall portals. Leon runs multiple DevOps teams, supporting everything from business analysis and requirements, through to resolving production issues and building strategic enhancements. ",
+          "At bp Leon works with various teams from the business and several other SIs to ensure the smooth-running of the mobile and portals portfolio. Leon is one of the advisors for bp's internal BTP design authority, which review new designs and proposals to ensure that we are focusing build effort correctly, following best practices and reusing available components."
+        ]
+      },
+      {
+        "client": "Chinese National Offshore Oil Corporation (CNOOC)",
+        "location": "Aberdeen and North Sea",
+        "role": "User Experience Architect",
+        "startDate": "February 2021",
+        "endDate": "March 2021",
+        "description": [
+          "Leon led the design project at CNOOC, showing the customer exactly what Fiori can do for them and the benefits over a transactional approach to work for plant maintenance and work order management. Leon was responsible for the design of this solution and ran numerous design thinking workshops for business leads to rig workers, in the CNOOC Aberdeen office and remotely. Leon had to not only support the client's mindset transition from transactional SAP to Fiori, but he also had to rapidly iterate on his designs, incorporating emergent requirements and helping the client to articulate their needs and wants.",
+          "The following implementation project was a big success and Capgemini continue to work with CNOOC, including their self-hosted innovation fairs."
+        ]
+      },
+      {
+        "client": "Dwr Cymru Welsh Water (DCWW)",
+        "location": "Cardiff and North Wales",
+        "role": "Senior developer (iOS & Web)",
+        "startDate": "July 2019 ",
+        "endDate": "February 2021",
+        "description": [
+          "Leon worked at DCWW on the FieldIT project, this project enabled more accurate planning and scheduling of work and supported Field workers making the best use of their time with minimal overheads. Leon's responsibilities included running client workshops, managing key stakeholders, owning the custom iOS Work Manager client and writing the OpenUI web extensions for all Work Manager client platforms. This was an interesting piece of work around OpenUI extensions because it's not a technology that is well-documented and we worked with SAP's WM product team to resolve several show-stopping bugs.",
+          "Leon also supported DCWW in establishing their own DevOps capability for mobile applications using Azure DevOps, this included Git strategy, continuous integration pipelines and more."
+        ]
+      },
+      {
+        "client": "Aerospace and Defence (secure client)",
+        "location": "Portsmouth",
+        "role": "Graduate developer / Fiori development lead",
+        "startDate": "August 2017",
+        "endDate": "August 2019",
+        "description": [
+          "Leon worked at an Aerospace and Defence company on an S4Hana upgrade and subsequent Fiori implementations, developing complex custom Fiori applications for work order management, plant maintenance, procurement, multi resource scheduling and more. Leon had to take on the role of Fiori development lead during the UAT phase of the S4 upgrade (6 months into this assignment), managing an offshore team of 8. Over the course of the next few months Leon grew the on-site Fiori team to 5 Fiori developers and 2 UX designers, this team delivered 7 additional custom applications and worked closely with the Business Intelligence and Microsoft Dynamics teams to integrate their reporting into the Fiori launchpad.",
+          "In this role Leon led design thinking workshops to gather requirements and prototype application designs, managed cutover activities and the Fiori development team."
+        ]
+      },
+      {
+        "client": "Sequris",
+        "location": "Maidenhead",
+        "role": "Defect Manager",
+        "startDate": "June 2017",
+        "endDate": "July 2017",
+        "description": [
+          "Leon's first role on project was defect manager for Integration testing at a pharmaceutical company, this was an excellent introduction to SAP projects."
+        ]
+      }
     ]
   },
   {

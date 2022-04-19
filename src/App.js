@@ -207,8 +207,54 @@ class Content extends React.Component {
 }
 
 class ExperienceItem extends Content {
+  constructor(props) {
+    super(props);
+    
+    this._initState = {
+      bShowProjects: false
+    };
+
+    this.state = this._initState;
+  }
+
+  _resetState() {
+    this.setState(this._initState);
+  }
+
+  _setState(oState) {
+    const newState = !oState.bShowProjects;
+    this.setState({bShowProjects: newState});
+  }
+
   _renderReadMoreLink(sCompany, sTag) {
     return <ReadMoreLink company={sCompany} tag={sTag} />;
+  }
+
+  _toggleProjectHistoryView() {
+    this._setState(this.state);  }
+
+  _renderProjectHistory(aProjects) {
+    const oProjectHistory = aProjects.map(function(project, index) {
+      var aDescription = project.description.map(function(paragraph, iKey) {
+        return <p key={iKey}>{paragraph}</p>;
+      });
+      return (
+        <section className="project" key={index}>
+          <ExperienceHeadings company={project.client} title={project.role} endDate={project.endDate} startDate={project.startDate} />
+          {aDescription}
+        </section>
+      );
+    });
+
+    return (
+      <div>
+        <hr />
+        <button className="button" onClick={() => this._toggleProjectHistoryView()}>{this.state.bShowProjects ? "Hide Project History" : "Show Project History"}</button>
+        <div id="project-history" className={this.state.bShowProjects ? null : "hide-content" }>
+          {oProjectHistory}
+        </div>
+      </div>
+    )
   }
 
   render() {
@@ -218,6 +264,7 @@ class ExperienceItem extends Content {
     var sEndDate = oEntry.endDate;  
     var sStartDate = oEntry.startDate;
     var bReadMore = oEntry.bReadMore;
+    var bProjects = oEntry.projects;
     var sTag = oEntry.tag;
     var aDescription = oEntry.description;
 
@@ -229,6 +276,7 @@ class ExperienceItem extends Content {
       <section>
         <ExperienceHeadings company={sCompany} title={sTitle} endDate={sEndDate} startDate={sStartDate} />
         {description}
+        {(bProjects ? this._renderProjectHistory(oEntry.projects) : null)}
         {(bReadMore) ? this._renderReadMoreLink(sCompany, sTag) : null}
         <hr />
       </section>
