@@ -56,7 +56,12 @@
   },
   {
     "exp": 0,
-    "name": "SCP",
-    "desc": "Leon has worked with the SAP Cloud Platform (now named BTP) extensively and is knowledgeable in many areas of the services available, such as the mobile development kit and conversational AI."
+    "name": "BTP",
+    "desc": "Leon has worked with the SAP Business Technology Platform (previously SCP) extensively and has experience in the Extension suite and API Management."
+  },
+  {
+    "exp": 0,
+    "name": "SAP Author",
+    "desc": "SAP Press released Leon's book \"Visual Studio Code for SAP\" in 2022, it covers building SAP applications in several technologies using VS Code and highlights development best practices."
   }
 ]

@@ -8,6 +8,8 @@ import SCPCert from "./img/C_CP_11.jpg";
 import SCPWebP from "./img/C_CP_11.webp";
 import PSMCert from "./img/PSM.jpg";
 import PSMWebP from "./img/PSM.webp";
+import BookJPG from "./img/VS-Code-cover.jpg";
+import BookWebP from "./img/VS-Code-cover.webp";
 
 class App extends Component {
   render() {
@@ -166,12 +168,15 @@ class SkillDescription extends SkillWall {
     if (this.state.skill === "Fiori") {
       const picture = <picture><source type="image/webp" srcSet={FioriWebP} /><img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" /></picture>;
       return <a href="https://www.youracclaim.com/badges/7739d664-8cfb-4905-ad6e-3d30dcff070d/public_url">{picture}</a>;
-    } else if (this.state.skill === "SCP") {
+    } else if (this.state.skill === "BTP") {
       const picture = <picture><source type="image/webp" srcSet={SCPWebP} /><img className="certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge" /></picture>;
       return <a href="https://www.youracclaim.com/badges/22cbf6f4-cd92-4a7d-b92b-5752b3d057b1/public_url">{picture}</a>;
     } else if (this.state.skill === "Agile") {
       const picture = <picture><source type="image/webp" srcSet={PSMWebP} /><img className="certificate-badge" src={PSMCert} alt="Professional Scrum Master Certification badge" /></picture>;
       return <a href="https://www.scrum.org/certificates/541977">{picture}</a>;
+    } else if (this.state.skill === "SAP Author") {
+      const picture = <picture><source type="image/webp" srcSet={BookWebP} /><img className="certificate-badge" src={BookJPG} alt="SAP Press: Visual Studio Code for SAP by Leon Hassan" /></picture>;
+      return <a href="https://www.sap-press.com/visual-studio-code-for-sap_5605/">{picture}</a>;
     }
   }
 
@@ -348,6 +353,10 @@ class Footer extends React.Component {
           <picture>
             <source type="image/webp" srcSet={PSMWebP} /> 
             <img className="print-only-view certificate-badge" src={PSMCert} alt="Professional Scrum Master Certification badge" />
+          </picture>
+          <picture>
+            <source type="image/webp" srcSet={BookWebP} /> 
+            <img className="print-only-view certificate-badge" src={BookJPG} alt="SAP Press: Visual Studio Code for SAP by Leon Hassan" />
           </picture>
         </footer>
     );
