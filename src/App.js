@@ -167,10 +167,10 @@ class SkillDescription extends SkillWall {
   _renderCertificationBadge() {
     if (this.state.skill === "Fiori") {
       const picture = <picture><source type="image/webp" srcSet={FioriWebP} /><img className="certificate-badge" src={FioriCert} alt="SAP Fiori Certification badge" /></picture>;
-      return <a href="https://www.youracclaim.com/badges/7739d664-8cfb-4905-ad6e-3d30dcff070d/public_url">{picture}</a>;
+      return <a href="https://www.credly.com/badges/18664838-e7a2-4856-a5d3-99db0162bba7/public_url">{picture}</a>;
     } else if (this.state.skill === "BTP") {
       const picture = <picture><source type="image/webp" srcSet={SCPWebP} /><img className="certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge" /></picture>;
-      return <a href="https://www.youracclaim.com/badges/22cbf6f4-cd92-4a7d-b92b-5752b3d057b1/public_url">{picture}</a>;
+      return <a href="https://www.credly.com/badges/9773c238-244a-41ee-b6d0-5bc41539eefb/public_url">{picture}</a>;
     } else if (this.state.skill === "Agile") {
       const picture = <picture><source type="image/webp" srcSet={PSMWebP} /><img className="certificate-badge" src={PSMCert} alt="Professional Scrum Master Certification badge" /></picture>;
       return <a href="https://www.scrum.org/certificates/541977">{picture}</a>;
@@ -348,7 +348,7 @@ class Footer extends React.Component {
           </picture>
           <picture>
             <source type="image/webp" srcSet={SCPWebP} /> 
-            <img className="print-only-view certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge" />
+            <img className="print-only-view certificate-badge" src={SCPCert} alt="SAP Cloud Platform Certification badge - DEFUNCT" />
           </picture>
           <picture>
             <source type="image/webp" srcSet={PSMWebP} /> 
