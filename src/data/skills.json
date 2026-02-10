@@ -1,16 +1,16 @@
 [
   {
-    "exp": 10,
+    "exp": 12,
     "name": "JavaScript",
     "desc": "Leon writes JavaScript day-to-day and strives for simple and concise code, with progressive enhancement and graceful degredation as the hallmark of his style."
   },
   {
-    "exp": 10,
+    "exp": 12,
     "name": "CSS",
     "desc": "Leon is an advocate of CSS and strives to use CSS appropriately rather than making a JS sledgehammer to fix all problems."
   },
   {
-    "exp": 10,
+    "exp": 12,
     "name": "HTML",
     "desc": "Leon has been following HTML standards since learning about semantic mark-up and how difficult browsing the web can be for people with accessibility needs."
   },
@@ -25,7 +25,7 @@
     "desc": "Leon has developed his own component-based interfaces in plain JS before beginning his React journey. Leon has since designed, built and delivered the Capgemini Advisory Solutions application, built in React with Material UI. This project was subsequently adopted by Capgemini Group and is now used globally for Advisory assessment & change management"
   },
   {
-    "exp": 7,
+    "exp": 9,
     "name": "SAPUI5",
     "desc": "Leon builds enterprise SAPUI5 applications in his day-job and is intimately familiar with the framework and it's shortcomings. This combined with Leons knowledge of the web makes him invaluable when advising on technologies and implementation/integration strategies."
   },
@@ -35,14 +35,14 @@
     "desc": "Leon follows Web Standards and is engaging at the explainer level to better understand and contribute to the growth of the web."
   },
   {
-    "exp": 7,
+    "exp": 9,
     "name": "SAP",
     "desc": "Leon has worked on high-profile SAP projects, ranging from huge S/4hana transformations to customising Work Manager using open web extensions."
   },
   {
-    "exp": 7,
+    "exp": 9,
     "name": "Fiori",
-    "desc": "Leon is an expert in Fiori guidelines and has vast experience in designing and developing applications that adhere to Fiori design principles. Leon has been focused on developing additional capability within his team for Fiori in other frameworks such as React."
+    "desc": "Leon is an expert in Fiori guidelines and has vast experience in designing and developing applications that adhere to Fiori design principles. Leon has been focused on developing additional capability within his team for Fiori in other JS frameworks such as React."
   },
   {
     "exp": 0,
